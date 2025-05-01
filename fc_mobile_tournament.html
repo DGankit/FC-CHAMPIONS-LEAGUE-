@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FC Mobile Tournament</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: #1c1c1c;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #28a745;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #218838;
+    }
+    section {
+      padding: 2rem;
+    }
+    h2 {
+      color: #28a745;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      padding: 0.5rem;
+    }
+    table {
+      width: 100%;
+      margin-top: 1rem;
+    }
+    input, button {
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+    }
+    footer {
+      background-color: #1c1c1c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FC Mobile Tournament</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#create">Create Tournament</a>
+    <a href="#results">Add Match Result</a>
+    <a href="#leaderboard">Leaderboard</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to the FC Mobile Tournament!</h2>
+    <p>Track scores, update results, and compete with friends in style.</p>
+  </section>
+
+  <section id="create">
+    <h2>Create Tournament</h2>
+    <form>
+      <label for="tournament-name">Tournament Name:</label><br />
+      <input type="text" id="tournament-name" name="tournament-name"><br />
+      <label for="players">Players (comma separated):</label><br />
+      <input type="text" id="players" name="players"><br />
+      <button type="button">Create (Manual Only)</button>
+    </form>
+  </section>
+
+  <section id="results">
+    <h2>Add Match Result</h2>
+    <form>
+      <label>Player 1:</label><br />
+      <input type="text" name="player1"><br />
+      <label>Score:</label>
+      <input type="number" name="score1"><br />
+      <label>Player 2:</label><br />
+      <input type="text" name="player2"><br />
+      <label>Score:</label>
+      <input type="number" name="score2"><br />
+      <button type="button">Add Result (Manual Only)</button>
+    </form>
+  </section>
+
+  <section id="leaderboard">
+    <h2>Leaderboard</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Wins</th>
+          <th>Losses</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Player A</td>
+          <td>3</td>
+          <td>1</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>Player B</td>
+          <td>2</td>
+          <td>2</td>
+          <td>6</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>This static website helps friends manage their FIFA Mobile tournaments. Update scores and ranks manually for now. Future versions may include automated tracking and database support.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 FC Mobile Tournament. All rights reserved.
+  </footer>
+</body>
+</html>
